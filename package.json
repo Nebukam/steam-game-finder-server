@@ -4,9 +4,12 @@
     "description": "Steam : Game Finder allows you to find which multiplayer games are shared within a group of steam users",
     "main": "server.js",
     "dependencies": {
-        "@nkmjs/core": "../nkmjs/packages/nkmjs-core"
+        "@nkmjs/core": "^0.1.29"
     },
     "scripts": {
-        "start": "server.js"
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "16.13.1"
     }
 }
