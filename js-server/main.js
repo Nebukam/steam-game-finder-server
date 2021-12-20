@@ -27,11 +27,6 @@ class ServerProcess extends server.core.ServerBase {
                 route: `/user/library/:id`,
                 handler: handlers.UserLibrary,
                 start: true
-            },
-            proxy: {
-                route: `/proxy/`,//?url=
-                handler: handlers.Proxy,
-                start: true
             }
         });
 
