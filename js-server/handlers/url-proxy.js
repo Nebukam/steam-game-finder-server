@@ -5,10 +5,14 @@ const server = require(`@nkmjs/core/server`).core;
 class HandlerUserBase extends server.handlers.Fetch{
     constructor(){super();}
 
+    Handle(){
+        this.Fetch(this._url);
+    }
+
     _SanitizeRequest(p_request){
         if(!p_request.query.url){ return false; }
         if(p_request.query.url == ``){ return false; }
-        this._id = p_request.query.url;
+        this._url = p_request.query.url;
         return true;
     }
 
