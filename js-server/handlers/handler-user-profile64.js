@@ -6,7 +6,7 @@ class HandlerUserProfile64 extends HandlerUserBase{
     constructor(){super();}
 
     Handle(){
-        this.Fetch(`https://steamcommunity.com/id/${this._id}?xml=1`);
+        this.Fetch(`https://steamcommunity.com/profiles/${this._id}?xml=1`);
     }
 
 }
