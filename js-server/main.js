@@ -29,12 +29,12 @@ class ServerProcess extends server.core.ServerBase {
                 start: true
             },
             getStore: {
-                route: `/user/store/:id`,
+                route: `/store/:id`,
                 handler: handlers.Store,
                 start: true
             },
-            getStore: {
-                route: `/user/deal/:id`,
+            getDeal: {
+                route: `/deal/:id`,
                 handler: handlers.Deal,
                 start: true
             }
